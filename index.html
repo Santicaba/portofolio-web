@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
+    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  </head>
+
+
+
+  <body >
+    <header class="encabezado">
+    <div class="overlay">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Santiago <span class="navegacion__apellido__gris">Cabaña</span></h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="principal">
+    <section class="presentacion" id="presentacion">
+      <div class="overlay">
+        <div class="presentacion__contenedor">
+          <div class="presentacion__contenedor_info">
+            <h1 class="presentacion__titulo presentacion__titulo__subtitulo">Hola, soy Santiago</h1>
+            <h3 class="presentacion__subtitulo presentacion__titulo__subtitulo">Desarrollador web frontend</h3>
+            <p class="presentacion__parrafo">
+              Soy desarrollador web. Aquí podrás conocer más sobre mis habilidades, algunos de mis proyectos destacados y cómo contactarme.
+            </p>
+            <div class="presentacion__contenedor_botones">
+              <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+              <a href="./assets/docs/cv.pdf" target="_blank" class="boton boton_oscuro" role="button">Descargar CV</a>
+            </div>
+          </div>
+          <div class="presentacion__imagen">
+            <img src="./assets/images/profile/coding.png" alt="Santiago" class="perfil__imagen__santiago">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <!-- repaso de las partes de la seccion -->
+
+      <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
+        sobre nuestra historia personal, para ello escribiremos lo siguiente -->
+        
+        <article class="articulo sobre_mi" id="sobre-mi">
+          <div class="articulo__contenedor_descripciones">
+            <section class="seccion_descripcion">
+              <div class="seccion_descripcion__porta_retrato">
+                
+              </div>
+              <div class="seccion_descripcion__info " aria-label="Descripción personal">
+                <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">Sobre mi</h3>
+                <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                  ¡Hola! Soy Santiago,desarrollador web. Me apasiona crear sitios web hermososy funcionales. 
+            Aquí podrás conocer más sobre mis habilidades, algunos de mis proyectos destacados y cómo contactarme.
+                </p>
+                <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                  Mi objetivo es crear experiencias digitales atractivas y accesibles, enfocándome en los detalles que hacen que cada proyecto sea único.
+                  Me encanta trabajar en equipo y colaborar con diseñadores y otros desarrolladores para transformar ideas en realidades tangibles.
+                </p>
+                <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                  Cuando no estoy escribiendo código, disfruto explorando nuevas herramientas y técnicas que puedan mejorar mi flujo de trabajo y la calidad de mis proyectos. 
+                  Estoy convencido de que la clave para un desarrollo web exitoso es la combinación de una base sólida en HTML y CSS con una pasión interminable por aprender y crecer en este campo en constante evolución.
+                </p>
+                
+              </div>
+            </section>
+          </div>
+
+
+        </article>
+        
+
+      
+        <section class="proyectos" id="proyectos">
+          <h2 class="proyectos__titulo">Proyectos Destacados</h2>
+          <div class="proyectos__grid">
+              <div class="card">
+                  <img src="./assets/images/proyectos/calendario.jpg" alt="Proyecto 1" class="card__imagen">
+                  <div class="card__contenido">
+                      <h3 class="card__titulo">Proyecto 1</h3>
+                      <p class="card__descripcion">Descripción breve del proyecto 1.</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./assets/images/proyectos/juegos.jpg" alt="Proyecto 2" class="card__imagen">
+                  <div class="card__contenido">
+                      <h3 class="card__titulo">Proyecto 2</h3>
+                      <p class="card__descripcion">Descripción breve del proyecto 2.</p>
+                  </div>
+              </div>
+              <div class="card">
+                  <img src="./assets/images/proyectos/clima.jpg" alt="Proyecto 3" class="card__imagen">
+                  <div class="card__contenido">
+                      <h3 class="card__titulo">Proyecto 3</h3>
+                      <p class="card__descripcion">Descripción breve del proyecto 3.</p>
+                  </div>
+              </div>
+
+
+              <div class="card">
+                <img src="./assets/images/proyectos/reproductor.jpg" alt="Proyecto 3" class="card__imagen">
+                <div class="card__contenido">
+                    <h3 class="card__titulo">Proyecto 3</h3>
+                    <p class="card__descripcion">Descripción breve del proyecto 3.</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="./assets/images/proyectos/paisaje.jpg" alt="Proyecto 3" class="card__imagen">
+                <div class="card__contenido">
+                    <h3 class="card__titulo">Proyecto 3</h3>
+                    <p class="card__descripcion">Descripción breve del proyecto 3.</p>
+                </div>
+              </div>
+
+
+              
+
+          </div>
+      </section>
+    </main> 
+
+   <!-- repaso de todo lo incluido en la etiqueta main-->
+
+     
+    <footer class="pie_de_pagina" role="contentinfo">
+        
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/RamaAlves"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/github-logo.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/ramiro_alves_/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://twitter.com/1394Alves"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/x-logo.png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+        </ul>
+      </div>
+         
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="mailto:mail@mail.com"
+              target="_blank"
+              >Mail: mail@mail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer> 
+  </body>
+</html>

@@ -1,0 +1,417 @@
+/* explicacion: al comienzo de nuestra hoja de estilos 
+es muy comun declarar las variables a utilizar */
+:root {
+  /* colors */
+  --texto-primario: #1E293B;
+  --texto-secundario: #d1d1d1;
+  --fondo-primario: #0f0921;
+  --fondo-primario-transparente: #14181C;
+  --fondo-secundario: #0a0c13;
+  --color-primario: #2c2acb;
+  --color-primario-apagado: #2422a3;
+  --color-secundario: #9b70f9;
+  --color-terciario: #6f6f6f;
+
+  /* sizes */
+  --presentacion-titulo-tamanio: 4rem;
+  --presentacion-titulo-tamanio-grande: 3.4rem;
+  --presentacion-descripcion-tamanio: 1.2rem;
+  --titulo-tamanio: 3rem;
+  --sub-titulo-tamanio: 2rem;
+  --texto-tamanio: 1.1rem;
+  --enlaces-tamanio: 1.2rem;
+  --texto-peso-grueso: 700;
+  --texto-peso-regular: 400;
+  --texto-peso-fino: 300;
+}
+
+
+/* estilos generales */
+/* CSS General */
+/* CSS General */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: var(--texto-secundario);
+  scroll-behavior: smooth;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+  font-size: 16px;
+}
+
+.principal {
+  /* Estilos futuros para .principal */
+}
+
+/* Estilos del Encabezado */
+
+.encabezado {
+  width: 100%;
+  position: relative;
+  background-image: url('./assets/images/profile/tu-imagen-de-fondo.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.encabezado .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.navegacion__titulo {
+  color: var(--texto-secundario);
+  padding: 0 10px;
+  margin-left: 95px;
+}
+
+.enlaces {
+  display: flex;
+  gap: 55px;
+  padding: 0 10px;
+}
+
+.enlaces__enlace {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Estilos de Presentación */
+
+.presentacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url('./assets/images/profile/juanjo-jaramillo-mZnx9429i94-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.presentacion::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.presentacion__contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  margin-left: 50px;
+}
+
+.presentacion__contenedor_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.presentacion__titulo {
+  color: #FFFFFF;
+  font-size: 3rem;
+  padding: 0.9375rem;
+  /* text-shadow: 5px 5px 4px #000000; */
+}
+
+.presentacion__subtitulo {
+  color: #28c2d3;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 30px;
+  padding: 0.9375rem;
+  text-shadow: 2px 2px 30px #0694a3;
+}
+
+.presentacion__parrafo {
+  padding: 0.9375rem;
+  white-space: normal; /* Permite el ajuste de línea */
+  overflow-wrap: break-word;
+  font-size: 1.25rem;
+  color: #dadada;
+  max-width: 600px;
+  color: #dadada;
+}
+
+.presentacion__contenedor_botones {
+  display: flex;
+  text-align: center;
+  gap: 15px;
+  padding: 0 15px;
+  margin-top: 3.125rem;
+}
+
+.boton {
+  padding: 10px 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  transition: ease 500ms;
+  font-weight: 600;
+}
+
+.boton_oscuro:hover {
+  background-color: white;
+  color: #1E293B;
+}
+
+.presentacion__imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil__imagen__santiago {
+  max-width: 50%;
+  height: auto;
+}
+
+
+/*SOBRE MI*/
+
+
+
+.articulo {
+  padding: 60px 20px;
+  background-color: #f4f4f9;
+}
+
+.articulo__titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.sobre_mi {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1/ span 3;
+}
+
+.articulo__contenedor_descripciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seccion_descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.seccion_descripcion__porta_retrato {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.seccion_descripcion__imagen {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion_descripcion__info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  
+}
+
+.seccion_descripcion__titulo {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.seccion_descripcion__parrafo {
+  font-size: 1.1rem;
+  color: rgb(39, 39, 39);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.scroll {
+  overflow-y: auto;
+}
+
+
+
+
+/*PROYECTOS*/
+
+.proyectos__titulo{
+  text-align: center;
+  font-size: 3.125rem;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.proyectos {
+  padding: 60px 20px;
+  background-color: #e8e8e8;
+}
+
+.proyectos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* .card:hover {
+  transform: translateY(-10px);
+} */
+
+.card__imagen {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.card__contenido {
+  padding: 20px;
+}
+
+.card__titulo {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card__descripcion {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+
+
+/*FOOTER*/
+
+
+
+.pie_de_pagina {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.pie_de_pagina__columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.pie_de_pagina__titulo_columna {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f4f4f4;
+}
+
+.enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.enlaces_redes {
+  display: flex;
+  gap: 15px;
+}
+
+.enlaces_vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.enlaces__item {
+  margin: 0;
+}
+
+.enlaces__enlace {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlaces__enlace_footer:hover {
+  color: #fff;
+}
+
+.enlaces__icono {
+  width: 24px;
+  height: 24px;
+}
+
+.pie_de_pagina__copyright {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
+  color: #bbb;
+}
